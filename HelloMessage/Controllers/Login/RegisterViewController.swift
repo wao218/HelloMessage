@@ -19,7 +19,7 @@ class RegisterViewController: UIViewController {
   
   private let imageView: UIImageView = {
     let imageView = UIImageView()
-    imageView.image = UIImage(systemName: "person")
+    imageView.image = UIImage(systemName: "person.circle")
     imageView.tintColor = .gray
     imageView.contentMode = .scaleAspectFit
     imageView.layer.masksToBounds = true
@@ -197,20 +197,35 @@ class RegisterViewController: UIViewController {
     
     // Firebase Log In
     
-    FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-      guard let result = authResult, error == nil else {
-        print("Error creating user")
+    DatabaseManager.shared.userExists(with: email) { [weak self] (exists) in
+      guard let strongSelf = self else {
         return
       }
       
-      let user = result.user
-      print("Created User: \(user)")
+      guard !exists else {
+        // display error user already exists
+        strongSelf.alertUserLoginError(message: "Looks like a user account for that email address already exists.")
+        return
+      }
+      
+      FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+        
+        guard authResult != nil, error == nil else {
+          print("Error creating user")
+          return
+        }
+        
+        DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email))
+        
+        strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+      }
+      
     }
     
   }
   
-  func alertUserLoginError() {
-    let alert = UIAlertController(title: "Whoops!", message: "Please enter all information to create a new account.", preferredStyle: .alert)
+  func alertUserLoginError(message: String = "Please enter all information to create a new account.") {
+    let alert = UIAlertController(title: "Whoops!", message: message, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Dismess", style: .cancel, handler: nil))
     present(alert, animated: true)
   }
