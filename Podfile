@@ -6,5 +6,8 @@ target 'HelloMessage' do
   use_frameworks!
 
   # Pods for HelloMessage
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
 end

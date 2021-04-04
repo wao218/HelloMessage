@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2B1838142617DD1200418B2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1838132617DD1200418B2C /* Extensions.swift */; };
+		2B1838282619397500418B2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B1838272619397500418B2C /* GoogleService-Info.plist */; };
 		2BB061092617AF9100DCD289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061082617AF9100DCD289 /* AppDelegate.swift */; };
 		2BB0610B2617AF9100DCD289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0610A2617AF9100DCD289 /* SceneDelegate.swift */; };
 		2BB0610D2617AF9100DCD289 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0610C2617AF9100DCD289 /* ConversationsViewController.swift */; };
@@ -20,10 +21,12 @@
 		2BB0612E2617B45B00DCD289 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0612D2617B45B00DCD289 /* VideoPlayerViewController.swift */; };
 		2BB061312617BDA300DCD289 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061302617BDA300DCD289 /* NewConversationViewController.swift */; };
 		2BB061342617BDC000DCD289 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061332617BDC000DCD289 /* ProfileViewController.swift */; };
+		48067E9809ED0531581DB410 /* Pods_HelloMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC1BB489B89D6FC47299AE1 /* Pods_HelloMessage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B1838132617DD1200418B2C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2B1838272619397500418B2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BB061052617AF9100DCD289 /* HelloMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB061082617AF9100DCD289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB0610A2617AF9100DCD289 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		2BB0612D2617B45B00DCD289 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		2BB061302617BDA300DCD289 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		2BB061332617BDC000DCD289 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		69528DA66F1425661EE8C64A /* Pods-HelloMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMessage.debug.xcconfig"; path = "Target Support Files/Pods-HelloMessage/Pods-HelloMessage.debug.xcconfig"; sourceTree = "<group>"; };
+		6A567991F6B2DB3E7779A8F9 /* Pods-HelloMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMessage.release.xcconfig"; path = "Target Support Files/Pods-HelloMessage/Pods-HelloMessage.release.xcconfig"; sourceTree = "<group>"; };
+		6DC1BB489B89D6FC47299AE1 /* Pods_HelloMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48067E9809ED0531581DB410 /* Pods_HelloMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +63,8 @@
 			children = (
 				2BB061072617AF9100DCD289 /* HelloMessage */,
 				2BB061062617AF9100DCD289 /* Products */,
+				442D89D2F982624CE2FADDC7 /* Pods */,
+				FD98F44DD37D8CA6EFE61755 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +85,7 @@
 				2BB0611E2617B13300DCD289 /* Views */,
 				2BB0611D2617B11E00DCD289 /* Controllers */,
 				2BB061162617AF9500DCD289 /* Info.plist */,
+				2B1838272619397500418B2C /* GoogleService-Info.plist */,
 			);
 			path = HelloMessage;
 			sourceTree = "<group>";
@@ -144,6 +154,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		442D89D2F982624CE2FADDC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69528DA66F1425661EE8C64A /* Pods-HelloMessage.debug.xcconfig */,
+				6A567991F6B2DB3E7779A8F9 /* Pods-HelloMessage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD98F44DD37D8CA6EFE61755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DC1BB489B89D6FC47299AE1 /* Pods_HelloMessage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BB061192617AF9500DCD289 /* Build configuration list for PBXNativeTarget "HelloMessage" */;
 			buildPhases = (
+				656B0F761C9DCB321BBCCA0D /* [CP] Check Pods Manifest.lock */,
 				2BB061012617AF9100DCD289 /* Sources */,
 				2BB061022617AF9100DCD289 /* Frameworks */,
 				2BB061032617AF9100DCD289 /* Resources */,
+				AD2FC3B0D5F4CDF365697CB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,11 +232,54 @@
 			files = (
 				2BB061152617AF9500DCD289 /* LaunchScreen.storyboard in Resources */,
 				2BB061122617AF9500DCD289 /* Assets.xcassets in Resources */,
+				2B1838282619397500418B2C /* GoogleService-Info.plist in Resources */,
 				2BB061102617AF9100DCD289 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		656B0F761C9DCB321BBCCA0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloMessage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2FC3B0D5F4CDF365697CB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloMessage/Pods-HelloMessage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloMessage/Pods-HelloMessage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloMessage/Pods-HelloMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BB061012617AF9100DCD289 /* Sources */ = {
@@ -367,6 +439,7 @@
 		};
 		2BB0611A2617AF9500DCD289 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69528DA66F1425661EE8C64A /* Pods-HelloMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +459,7 @@
 		};
 		2BB0611B2617AF9500DCD289 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A567991F6B2DB3E7779A8F9 /* Pods-HelloMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
