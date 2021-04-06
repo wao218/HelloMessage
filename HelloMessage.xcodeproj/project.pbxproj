@@ -186,6 +186,7 @@
 				2BB061022617AF9100DCD289 /* Frameworks */,
 				2BB061032617AF9100DCD289 /* Resources */,
 				AD2FC3B0D5F4CDF365697CB3 /* [CP] Embed Pods Frameworks */,
+				EBF6ADAC7A4B46331B1E3778 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +281,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloMessage/Pods-HelloMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF6ADAC7A4B46331B1E3778 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloMessage/Pods-HelloMessage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloMessage/Pods-HelloMessage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloMessage/Pods-HelloMessage-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

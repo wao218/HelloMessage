@@ -6,8 +6,17 @@ target 'HelloMessage' do
   use_frameworks!
 
   # Pods for HelloMessage
+
+# Firebase
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+
+# Facebook
+pod 'FBSDKLoginKit'
+
+# Google
+pod 'GoogleSignIn'
+    
 
 end
