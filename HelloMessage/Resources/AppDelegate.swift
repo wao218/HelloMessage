@@ -68,11 +68,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     print("Did sign in with Google: \(user)")
     
-    guard let email = user.profile.email, let firstName = user.profile.givenName, let lastName = user.profile.familyName else {
+    guard let email = user.profile.email,
+          let firstName = user.profile.givenName,
+          let lastName = user.profile.familyName else {
       return
     }
     
     UserDefaults.standard.set(email, forKey: "email")
+    UserDefaults.standard.set("\(firstName) \(lastName)", forKey: "name")
     
     DatabaseManager.shared.userExists(with: email) { (exists) in
       if !exists {
