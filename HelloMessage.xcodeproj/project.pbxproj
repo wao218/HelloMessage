@@ -13,6 +13,10 @@
 		2B5BB83F2620E8D30091BF65 /* NewConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BB83E2620E8D30091BF65 /* NewConversationTableViewCell.swift */; };
 		2B5BB8432621F4240091BF65 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BB8422621F4240091BF65 /* LocationPickerViewController.swift */; };
 		2B5BB84626220F010091BF65 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BB84526220F010091BF65 /* ProfileTableViewCell.swift */; };
+		2B5BB88926224B110091BF65 /* ConversationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BB88826224B110091BF65 /* ConversationModels.swift */; };
+		2B5BB88C26224B910091BF65 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BB88B26224B910091BF65 /* ChatModels.swift */; };
+		2B5BB88F26224BFC0091BF65 /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BB88E26224BFC0091BF65 /* SearchResultModel.swift */; };
+		2B5BB89326224C3C0091BF65 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BB89226224C3C0091BF65 /* ProfileViewModel.swift */; };
 		2B9C94F4261F563700B16312 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C94F3261F563600B16312 /* ConversationTableViewCell.swift */; };
 		2BB061092617AF9100DCD289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061082617AF9100DCD289 /* AppDelegate.swift */; };
 		2BB0610B2617AF9100DCD289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0610A2617AF9100DCD289 /* SceneDelegate.swift */; };
@@ -23,7 +27,6 @@
 		2BB061252617B3F400DCD289 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061242617B3F400DCD289 /* LoginViewController.swift */; };
 		2BB061282617B40F00DCD289 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061272617B40F00DCD289 /* RegisterViewController.swift */; };
 		2BB0612B2617B43900DCD289 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0612A2617B43900DCD289 /* PhotoViewerViewController.swift */; };
-		2BB0612E2617B45B00DCD289 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0612D2617B45B00DCD289 /* VideoPlayerViewController.swift */; };
 		2BB061312617BDA300DCD289 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061302617BDA300DCD289 /* NewConversationViewController.swift */; };
 		2BB061342617BDC000DCD289 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB061332617BDC000DCD289 /* ProfileViewController.swift */; };
 		2BC9858F261CBAD2008C38C6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9858E261CBAD2008C38C6 /* ChatViewController.swift */; };
@@ -38,6 +41,10 @@
 		2B5BB83E2620E8D30091BF65 /* NewConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationTableViewCell.swift; sourceTree = "<group>"; };
 		2B5BB8422621F4240091BF65 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
 		2B5BB84526220F010091BF65 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		2B5BB88826224B110091BF65 /* ConversationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModels.swift; sourceTree = "<group>"; };
+		2B5BB88B26224B910091BF65 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		2B5BB88E26224BFC0091BF65 /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
+		2B5BB89226224C3C0091BF65 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		2B9C94F3261F563600B16312 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
 		2BB061052617AF9100DCD289 /* HelloMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB061082617AF9100DCD289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +57,6 @@
 		2BB061242617B3F400DCD289 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BB061272617B40F00DCD289 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2BB0612A2617B43900DCD289 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
-		2BB0612D2617B45B00DCD289 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		2BB061302617BDA300DCD289 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		2BB061332617BDC000DCD289 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2BC9858E261CBAD2008C38C6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +116,6 @@
 				2BB0610C2617AF9100DCD289 /* ConversationsViewController.swift */,
 				2BB061362617BF0A00DCD289 /* Login */,
 				2BB0612A2617B43900DCD289 /* PhotoViewerViewController.swift */,
-				2BB0612D2617B45B00DCD289 /* VideoPlayerViewController.swift */,
 				2BB061302617BDA300DCD289 /* NewConversationViewController.swift */,
 				2BB061332617BDC000DCD289 /* ProfileViewController.swift */,
 				2BC9858E261CBAD2008C38C6 /* ChatViewController.swift */,
@@ -134,6 +139,10 @@
 		2BB0611F2617B13C00DCD289 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2B5BB88826224B110091BF65 /* ConversationModels.swift */,
+				2B5BB88B26224B910091BF65 /* ChatModels.swift */,
+				2B5BB88E26224BFC0091BF65 /* SearchResultModel.swift */,
+				2B5BB89226224C3C0091BF65 /* ProfileViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -343,18 +352,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5BB88926224B110091BF65 /* ConversationModels.swift in Sources */,
+				2B5BB88C26224B910091BF65 /* ChatModels.swift in Sources */,
 				2BB061252617B3F400DCD289 /* LoginViewController.swift in Sources */,
 				2B5BB83F2620E8D30091BF65 /* NewConversationTableViewCell.swift in Sources */,
+				2B5BB88F26224BFC0091BF65 /* SearchResultModel.swift in Sources */,
 				2B18382E26194C3200418B2C /* DatabaseManager.swift in Sources */,
 				2BB061282617B40F00DCD289 /* RegisterViewController.swift in Sources */,
 				2BB061312617BDA300DCD289 /* NewConversationViewController.swift in Sources */,
 				2BB0610D2617AF9100DCD289 /* ConversationsViewController.swift in Sources */,
-				2BB0612E2617B45B00DCD289 /* VideoPlayerViewController.swift in Sources */,
 				2B1838142617DD1200418B2C /* Extensions.swift in Sources */,
 				2BB061092617AF9100DCD289 /* AppDelegate.swift in Sources */,
 				2BB061342617BDC000DCD289 /* ProfileViewController.swift in Sources */,
 				2BB0610B2617AF9100DCD289 /* SceneDelegate.swift in Sources */,
 				2B5BB84626220F010091BF65 /* ProfileTableViewCell.swift in Sources */,
+				2B5BB89326224C3C0091BF65 /* ProfileViewModel.swift in Sources */,
 				2B9C94F4261F563700B16312 /* ConversationTableViewCell.swift in Sources */,
 				2BC9858F261CBAD2008C38C6 /* ChatViewController.swift in Sources */,
 				2BB0612B2617B43900DCD289 /* PhotoViewerViewController.swift in Sources */,

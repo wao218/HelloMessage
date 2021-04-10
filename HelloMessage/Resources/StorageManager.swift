@@ -8,8 +8,11 @@
 import Foundation
 import FirebaseStorage
 
+/// Manager object to fetch and upload to firebase storage
 final class StorageManager {
   static let shared = StorageManager()
+  
+  private init() {}
   
   private let storage = Storage.storage().reference()
   
@@ -17,7 +20,7 @@ final class StorageManager {
   
   /// Uploads picture to firebase storage and returns completion with url string to download
   public func uploadProfilePicture(with data: Data, fileName: String, completion: @escaping UploadMediaCompletion) {
-    storage.child("images/\(fileName)").putData(data, metadata: nil) { (metadata, error) in
+    storage.child("images/\(fileName)").putData(data, metadata: nil) { [weak self] (metadata, error) in
       guard error == nil else {
         // failed
         print("failed to upload data to firebase for picture")
@@ -25,7 +28,7 @@ final class StorageManager {
         return
       }
       
-      self.storage.child("images/\(fileName)").downloadURL { (url, error) in
+      self?.storage.child("images/\(fileName)").downloadURL { (url, error) in
         guard let url = url else {
           print("failed to get download url")
           completion(.failure(StorageErrors.failedToGetDownloadUrl))

@@ -9,7 +9,8 @@ import UIKit
 import FirebaseAuth
 import JGProgressHUD
 
-class RegisterViewController: UIViewController {
+/// Controller that shows registration form
+final class RegisterViewController: UIViewController {
   
   // MARK: - UI Elements
   private let spinner = JGProgressHUD(style: .dark)
@@ -324,7 +325,7 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
     guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
       return
     }
-    self.imageView.image = selectedImage
+    imageView.image = selectedImage
   }
   
   func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

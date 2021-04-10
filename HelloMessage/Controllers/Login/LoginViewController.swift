@@ -11,7 +11,8 @@ import FBSDKLoginKit
 import GoogleSignIn
 import JGProgressHUD
 
-class LoginViewController: UIViewController {
+/// Controller that shows login form
+final class LoginViewController: UIViewController {
   
   // MARK: - UI Elements
   private let spinner = JGProgressHUD(style: .dark)

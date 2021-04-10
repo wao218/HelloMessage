@@ -11,7 +11,7 @@ import FBSDKCoreKit
 import GoogleSignIn
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
@@ -54,7 +54,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
   }
 
-  
+}
+
+// MARK: - GIDSignInDelegate
+extension AppDelegate: GIDSignInDelegate {
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     guard error == nil else {
       if let error = error {
@@ -134,6 +137,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
   func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
     print("Google user was disconnected")
   }
-
 }
-
