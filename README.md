@@ -9,6 +9,7 @@ Real time messaging app utilizing Firebase.
 - Real time message
 - Photo, Video, and Location Messages
 - Delete Messages
+- Search Users
 
 
 # Screenshots
