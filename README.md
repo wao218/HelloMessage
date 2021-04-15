@@ -4,6 +4,7 @@ Real time messaging app utilizing Firebase.
 
 # Features
 
+- Register Users
 - Facebook Log in support
 - Google Sign in support
 - Real time message
